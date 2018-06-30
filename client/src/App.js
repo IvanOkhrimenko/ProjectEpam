@@ -1,18 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import Customers from './components/customers';
+import Header from './components/Header'
+import Home from './components/pages/Home'
+import Footer from './components/Footer'
+import { Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">React Express Starter</h1>
-        </header>
-        <Customers />
-      </div>
+        <Header />
+        <Switch>
+						<Route exact path="/home" component={Home} />
+						{/* <Route exact path="/posts" component={Home} /> */}
+						{/* <Route path="/posts/:id" component={Post} />
+						<Route path='/contacts' component={Contacts} />
+						<Route path='/music' component={Music} />
+						<Route path='/videos' component={Videos} />
+						<Route path='/actors/:hero' component={Actor} /> */}
+						<Route path='/band' component={Customers} />
+						{/* <Route path='*' component={NotFound}/>  */}
+					</Switch>
+          <Footer/>
+      </div >
     );
   }
 }

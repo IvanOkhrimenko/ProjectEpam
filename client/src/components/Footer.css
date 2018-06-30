@@ -1,0 +1,11 @@
+.footer{
+    max-height: 300px;
+    border: 1px solid red;
+    background-color: black;
+}
+.footer .foot-img{
+    max-height: 150px;
+}
+.footer .foot-img:hover{
+   opacity: 0.5;
+}
