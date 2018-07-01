@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Post from './components/pages/Post'
 import './App.css';
 import Customers from './components/customers';
 import Header from './components/Header'
@@ -15,7 +15,7 @@ class App extends Component {
         <Switch>
 						<Route exact path="/" component={Home} />
 						<Route exact path="/home" component={Home} />
-						{/* <Route exact path="/posts" component={Home} /> */}
+						<Route path="/posts/:id" component={Post} /> 
 						{/* <Route path="/posts/:id" component={Post} />
 						<Route path='/contacts' component={Contacts} />
 						<Route path='/music' component={Music} />
