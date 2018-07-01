@@ -1,0 +1,17 @@
+.posts{
+    
+    border: 1px solid red;
+    width: 100%;
+}
+.posts img{
+    max-width: 400px;
+}
+.post{
+    display: inline-block;
+    position: relative;
+    border: 1px solid red;
+    height: 500px;
+    max-width: 550px; 
+    box-sizing: border-box;
+    vertical-align: text-top;
+}

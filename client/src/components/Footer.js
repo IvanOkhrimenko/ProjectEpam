@@ -9,7 +9,7 @@ export default class Header extends Component {
             <footer className='footer'>
                 <img className='foot-img' src={logo} />
                 <a href="#">
-                <span></span>
+                    <i className="fab fa-facebook-f"></i>
                 </a>
             </footer>
         );

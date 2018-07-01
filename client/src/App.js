@@ -13,6 +13,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Switch>
+						<Route exact path="/" component={Home} />
 						<Route exact path="/home" component={Home} />
 						{/* <Route exact path="/posts" component={Home} /> */}
 						{/* <Route path="/posts/:id" component={Post} />
