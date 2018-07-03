@@ -1,0 +1,72 @@
+{
+    "1": {
+        "id": 1,
+        "city": "madison",
+        "state": "wisconsin",
+        "country": "united state",
+        "lat": "43.069521",
+        "lng": "-89.396634",
+        "date": "SEP 02 2018",
+        "place": "kohl center"
+    },
+    "2": {
+        "id": 2,
+        "city": "minneapolis",
+        "state": "minnesota",
+        "country": "united state",
+        "lat": "44.979682",
+        "lng": "-93.276201",
+        "date": "SEP 04 2018",
+        "place": "target center"
+    },
+    "3": {
+        "id": 3,
+        "city": "LINCOLN",
+        "state": "nebraska",
+        "country": "united state",
+        "lat": "40.817904",
+        "lng": "-96.712604",
+        "date": "SEP 06 2018",
+        "place": "PINNACLE BANK ARENA"
+    },
+    "4": {
+        "id": 4,
+        "city": "GRAND FORKS",
+        "state": "wisconsin",
+        "country": "united state",
+        "lat": "47.910795",
+        "lng": "-97.090996",
+        "date": "SEP 08 2018",
+        "place": "ALERUS CENTER"
+    },
+    "5": {
+        "id": 5,
+        "city": "SIOUX FALLS",
+        "state": "South Dakota",
+        "country": "united state",
+        "lat": "43.560880",
+        "lng": "-96.751508",
+        "date": "SEP 11 2018",
+        "place": "SANFORD PREMIER CENTER"
+    },
+    "6": {
+        "id": 6,
+        "city": "WINNIPEG",
+        "state": "Manitoba",
+        "country": "Canada",
+        "lat": "49.892698",
+        "lng": "-97.143669",
+        "date": "SEP 13 2018",
+        "place": "Bell MTS Place"
+    },
+    "7": {
+        "id": 7,
+        "city": "SASKATOON",
+        "state": "Saskatchewan",
+        "country": "Canada",
+        "lat": "52.189136",
+        "lng": "-106.679106",
+        "date": "SEP 02 2018",
+        "place": "SASKTEL CENTRE"
+    }
+}

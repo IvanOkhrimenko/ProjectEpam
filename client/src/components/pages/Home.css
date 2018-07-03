@@ -1,3 +1,60 @@
 .home-style{
-    background-color: #dedede;
+    background-color: #eeeeee;
+}
+.posts{
+
+    width: 100%;
+}
+.posts img{
+    max-width: 300px;
+    max-height: 300px;
+}
+.post{   
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+    height: 400px;
+    max-width: 550px; 
+    box-sizing: border-box;
+    vertical-align: text-top;
+    overflow: hidden;
+}
+
+.postList-content{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.postList-text{
+    vertical-align: text-top;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: hidden;
+}
+.posts-page{
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+.post-page{
+    width: 70%;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+   
+}
+.post-page .post-img{
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+.post-page p{
+    margin: 0 auto;
+    font-size: 1.2em;
+    max-width: 75%;
+    margin-bottom: 20px;
 }

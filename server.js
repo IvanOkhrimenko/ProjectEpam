@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const posts = require('./client/src/assets/posts.json')
+const tours = require('./client/src/assets/tour.json')
 
 const app = express();
 app.use(bodyParser.json());
@@ -10,6 +11,9 @@ app.use(bodyParser.json());
 
 app.get('/posts', (req, res) => {
 	res.send(posts);
+});
+app.get('/tour', (req, res) => {
+	res.send(tours);
 });
 
 app.get('/api/customers', (req, res) => {

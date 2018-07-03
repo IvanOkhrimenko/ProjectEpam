@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './PostList.css';
-import Post from '../components/pages/Post';
+
 import { Link, Router } from 'react-router-dom';
 
 class PostList extends Component {
@@ -30,11 +29,15 @@ class PostList extends Component {
           <div key={post.id} className='post'>
             <Link to={{
               pathname: `/posts/${post.id}/`,
-              state: { posts:post }
+              state: { posts: post }
             }}>
-              <h2>{post.title}</h2>
-              <img src={post.poster} alt="" />
-              <p>{post.body}</p>
+              <div className="postList-content">
+                <img src={post.poster} alt="" />
+                <div className='postList-text'>
+                  <h2>{post.title}</h2>
+                  <p className='post-description'>{post.body}</p>
+                </div>
+              </div>
             </Link>
           </div>
         )}

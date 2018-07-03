@@ -11,7 +11,7 @@ export default class Header extends Component {
                         <li><Link to="/home">Home</Link></li>
                         <li><Link to="/band">Band</Link></li>
                         <li><Link to="/music">Music</Link></li>
-                        <li><Link to="/music">Tour</Link></li>
+                        <li><Link to="/tour">Tour</Link></li>
                     </ul>
                 </div>
             </header>

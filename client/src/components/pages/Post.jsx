@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 export default class Post extends Component {
     constructor(props) {
         super(props);
@@ -8,23 +7,18 @@ export default class Post extends Component {
         this.state.redirect = false;
     }
 
-  render() {
-    console.log(this.state);
-    if (this.state.posts.length === 0) {
-      return <div>...loading</div>;
+    render() {
+        console.log(this.state);
+        const post = this.state.posts;
+ 
+        return (
+            <div className="posts-page">
+                <div key={post.id} className="post-page">
+                    <h2>{post.title.toUpperCase()}</h2>
+                    <img className="post-img" src={post.poster} alt="" />
+                    <p>{post.fullBody}</p>
+                </div>
+            </div>
+        );
     }
-    return (
-      <div className="posts">
-        <h2>Posts</h2>
-
-       
-          <div key={this.state.posts.id} className='post'>
-       
-              <h2>{this.state.posts.title}</h2>
-              <img src={this.state.posts.poster} alt="" />
-              <p>{this.state.posts.body}</p>
-          </div>
-      </div>
-    );
-  }
 }
