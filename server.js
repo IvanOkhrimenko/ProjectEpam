@@ -1,8 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const posts = require('./client/src/assets/posts.json')
-const tours = require('./client/src/assets/tour.json')
+const posts = require('./client/src/assets/posts.json');
+const tours = require('./client/src/assets/tour.json');
+const band = require('./client/src/assets/band.json')
 
 const app = express();
 app.use(bodyParser.json());
@@ -16,14 +17,8 @@ app.get('/tour', (req, res) => {
 	res.send(tours);
 });
 
-app.get('/api/customers', (req, res) => {
-  const customers = [
-    { id: 1, firstName: 'John', lastName: 'Doe' },
-    { id: 2, firstName: 'Brad', lastName: 'Traversy' },
-    { id: 3, firstName: 'Mary', lastName: 'Swanson' },
-  ];
-
-  res.json(customers);
+app.get('/band', (req, res) => {
+  res.json(band);
 });
 
 const port = 5000;

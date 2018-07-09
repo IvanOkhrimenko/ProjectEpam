@@ -7,9 +7,9 @@ export default class Header extends Component {
     render() {
         return (
             <footer className='footer'>
-                <img className='foot-img' src={logo} />
-                <a href="#">
-                    <i className="fab fa-facebook-f"></i>
+
+                <a href="/home">
+                    <img className='foot-img' src={logo} />
                 </a>
             </footer>
         );

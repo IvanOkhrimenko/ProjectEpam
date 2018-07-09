@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import Slider from '../Slider/Slider'
 import Map from '../Map'
 import './Home.css'
+import TourList from '../TourList';
 
 export default class Home extends Component {
    
 	render() {
 		return (
-			<div className='home-style'>
+			<div >
 				<Slider />
+                <TourList/>
 				<Map />
 			</div>
 		);

@@ -1,0 +1,109 @@
+{
+    "1": {
+        "id": 1,
+        "first_name": "James",
+        "last_name": "Hetfield",
+        "role": "guitar",
+        "time": "1981-now",
+        "image": "http://www.gstatic.com/tv/thumb/persons/78793/78793_v9_bb.jpg",
+        "born": "August 3, 1963 (age 54 years), Downey, California, United States",
+        "height": "1.85 m",
+        "biography": "James Alan Hetfield is an American musician, singer, and songwriter known for being the co-founder, lead vocalist, rhythm guitarist, and main songwriter for the American heavy metal band Metallica."
+    },
+    "2": {
+        "id": 2,
+        "first_name": "Lars",
+        "last_name": "Ulrich",
+        "role": "drams",
+        "time": "1981-now",
+        "image": "http://www.gstatic.com/tv/thumb/persons/74202/74202_v9_ba.jpg",
+        "born": "December 26, 1963 (age 54 years), Gentofte Municipality, Denmark",
+        "height": "1.66 m",
+        "biography": "Lars Ulrich R is a Danish musician, songwriter, actor, and record producer. He is best known as the drummer and co-founder of the American heavy metal band Metallica."
+    },
+    "3": {
+        "id": 3,
+        "first_name": "Kirk",
+        "last_name": "Hammett",
+        "role": "lead guitar",
+        "time": "1983-now",
+        "image": "http://www.gstatic.com/tv/thumb/persons/450496/450496_v9_ba.jpg",
+        "born": "November 18, 1962 (age 55 years), San Francisco, California, United States",
+        "height": "1.72 m",
+        "biography": "Kirk Lee Hammett is an American musician who has been lead guitarist and a contributing songwriter for the heavy metal band Metallica since 1983. Before joining Metallica he formed and named the band Exodus."
+   
+    },
+    "4": {
+        "id": 4,
+        "first_name": "Dave",
+        "last_name": "Mustane",
+        "role": "guitar",
+        "time": "1982-1983",
+        "image": "http://www.gstatic.com/tv/thumb/persons/207615/207615_v9_bb.jpg",
+        "born": "September 13, 1961 (age 56 years), La Mesa, California, United States",
+        "height": "1.83 m",
+        "biography": "David Scott Mustaine is an American guitarist, singer, songwriter, actor and author. He is best known as the co-founder, lead vocalist, guitarist and primary songwriter of the American heavy metal band. "
+   
+    },
+    "5": {
+        "id": 5,
+        "first_name": "Cliff",
+        "last_name": "Burton",
+        "role": "bass guitar",
+        "time": "1982-1986",
+        "image": "http://www.gstatic.com/tv/thumb/persons/451975/451975_v9_ba.jpg",
+        "born": "February 10, 1962, Castro Valley, California, United States",  
+        "died": "September 27, 1986, Dörarp, Sweden",
+        "height": "1.88 m",
+        "biography": "Clifford Lee 'Cliff' Burton was an American musician and songwriter, best known as the second bass guitarist for the American band Metallica from December 1982 until his death in September 1986."
+   
+    },
+    "6": {
+        "id": 6,
+        "first_name": "Robert",
+        "last_name": "Trujillo",
+        "role": "bass guitar",
+        "time": "2003-now",
+        "image": "https://2.bp.blogspot.com/-g2RdadcJtC0/WUKdJazzkII/AAAAAAAA95U/8-XOy_4qxFgTlxCjAkJWksOQ0UeZHulKwCLcBGAs/s1600/35157422292_29e4a5c07a_b.jpg",
+        "born": "October 23, 1964 (age 53 years), Santa Monica, California, United States",  
+        "height": "1.75 m",
+        "biography": "Roberto Agustín Miguel Santiago Samuel Perez de la Santa Concepción Trujillo Veracruz Bautista better known as Robert Trujillo, is an American musician and songwriter best known as the current bassist."
+   
+    },
+    "7": {
+        "id": 7,
+        "first_name": "Jason",
+        "last_name": "Newsted",
+        "role": "bass guitar",
+        "time": "1986-2001",
+        "image": "http://www.gstatic.com/tv/thumb/persons/451967/451967_v9_ba.jpg",
+        "born": "March 4, 1963 (age 55 years), Battle Creek, Michigan, United States",  
+        "height": "1.75 m",
+        "biography": "Jason Curtis Newsted is an American metal musician, known for being the third bass guitarist with the band Metallica from October 1986 until his sudden departure in January 2001."
+   
+   
+    },
+    "8": {
+        "id": 8,
+        "first_name": "Ron",
+        "last_name": "McGovney",
+        "role": "bass guitar",
+        "time": "1982-1982",
+        "image": "http://images.equipboard.com/uploads/user/image/9818/big_ron-mcgovney.jpg?v=1525308297",
+        "born": "November 2, 1962 (age 55 years), Los Angeles, California, United States",  
+        "height": "1.75 m",
+        "biography": "Ronald J. 'Ron' McGovney is a semi-retired American musician, best known as the original bass guitarist in the heavy metal band Metallica from October 1981 to December 1982. "
+   
+    },
+    "9": {
+        "id": 9,
+        "first_name": "Bob",
+        "last_name": "Rock",
+        "role": "lead guitar",
+        "time": "2001-2003",
+        "image": "https://i.ytimg.com/vi/sgKxwAu-zoY/maxresdefault.jpg",
+        "born": "April 19, 1954 (age 64 years), Winnipeg, Canada",  
+        "height": "1.78 m",
+        "biography": "Robert Jens 'Bob' Rock is a Canadian musician, sound engineer, and record producer, best known for producing rock bands and music artists such as The Tragically Hip, Aerosmith, The Cult, Bon Jovi, Mötley."
+    }
+}

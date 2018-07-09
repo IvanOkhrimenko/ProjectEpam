@@ -10,7 +10,7 @@ export default class Slider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      slideCount: 1
+      slideCount: 3
     }
     this.previousSlide = this.previousSlide.bind(this);
     this.nextSlide = this.nextSlide.bind(this);
@@ -29,10 +29,6 @@ export default class Slider extends Component {
         {/* Arrow Functionality */}
         <LeftArrow previousSlide={this.previousSlide} />
         <RightArrow nextSlide={this.nextSlide} />
-
-
-
-
       </div>
     );
   }
@@ -45,7 +41,6 @@ export default class Slider extends Component {
     else {
       this.setState({ slideCount: this.state.slideCount - 1 });
     }
-    console.log(this.state);
   }
   nextSlide() {
     if (this.state.slideCount >= 3) {
@@ -54,8 +49,6 @@ export default class Slider extends Component {
     else {
       this.setState({ slideCount: this.state.slideCount + 1 });
     }
-
-    console.log(this.state);
   }
 
 
