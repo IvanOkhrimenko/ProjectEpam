@@ -10,7 +10,6 @@ export default class Post extends Component {
     render() {
         console.log(this.state);
         const post = this.state.posts;
- 
         return (
             <div className="posts-page">
                 <div key={post.id} className="post-page">

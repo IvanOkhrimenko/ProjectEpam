@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Slider from '../Slider/Slider'
 import Map from '../Map'
-import './Home.css'
+import '../css/Home.css'
 import TourList from '../TourList';
 import { log } from 'util';
 

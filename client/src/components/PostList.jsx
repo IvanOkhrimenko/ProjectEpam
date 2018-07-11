@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, Router } from 'react-router-dom';
+import news from '../img/newspaper-regular.svg'
+import { Link } from 'react-router-dom';
 const style = {
   height: 30,
   border: "1px solid green",
@@ -13,7 +14,7 @@ class PostList extends React.Component {
     this.state = {
       posts: [],
       count: 5,
-      name: 'Load More'
+      name: 'Load More',
     };
   }
 
@@ -21,8 +22,8 @@ class PostList extends React.Component {
     fetch('/posts')
       .then(res => res.json())
       .then(posts => this.setState({ posts }, () => console.log('Customers fetched...', posts)));
-    console.log(this.state)
   }
+
   fetchMoreData = (items) => {
     if (items.length >= 100) {
       this.setState({ name: 'All posts loaded' });
@@ -45,26 +46,33 @@ class PostList extends React.Component {
     items = Object.values(this.state.posts).slice(0, this.state.count);
     return (
       <div className="posts">
-        <h1>Posts</h1>
+        <div className="posts-news">
+          <img src={news} alt="" />
+          <h2>News</h2>
+        </div>
         <div>
           {items.map(post => (
             <div key={post.id} className='post'>
-              <Link to={{
-                pathname: `/posts/${post.id}/`,
-                state: { posts: post }
-              }}>
-                <div className="postList-content">
-                  <img src={post.poster} alt="" />
-                  <div className='postList-text'>
-                    <h2>{post.title}</h2>
-                    <p className='post-description'>{post.body}</p>
-                  </div>
+              <div className="postList-content">
+                <div className='postList-text'>
+                  <h2>{post.title}</h2>
+                  <p className="post-description">{post.body}</p>
                 </div>
-              </Link>
+                <div className="post-footer">
+                  <p>{post.date}</p>
+                  <Link to={{
+                    pathname: `/posts/${post.id}/`,
+                    state: { posts: post }
+                  }}>
+
+                    <p>Click here to read more <i className="fas fa-arrow-circle-right"></i> </p>
+                  </Link>
+                </div>
+              </div>
             </div>
           ))}
         </div>
-        <button className="button" onClick={() => this.fetchMoreData(items)}>
+        <button className="load-more" onClick={() => this.fetchMoreData(items)}>
           {this.state.name}
         </button>
       </div>

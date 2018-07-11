@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./Music.css";
-import AudioBubble from "./AudioBubble";
+import AudioBubble from "../AudioBubble";
 const AUDIO = [
     {
         title: 'Master of Puppets',
@@ -46,9 +46,9 @@ class Music extends Component {
     }
     handleSearch = event => {
         this.setState({
-          searchQuery: event.target.value.toLowerCase()
+            searchQuery: event.target.value.toLowerCase()
         });
-      };
+    };
     componentDidMount() {
         fetch('/music')
             .then(res => res.json())
@@ -60,21 +60,21 @@ class Music extends Component {
         if (this.state.songs.length === 0) {
             return <div>...loading</div>;
         }
-        
+
         const filteredSongs = this.state.songs.filter(
             song => {
-              return song.title.toLowerCase().indexOf(this.state.searchQuery) !== -1;
+                return song.title.toLowerCase().indexOf(this.state.searchQuery) !== -1;
             }
-          );
+        );
 
         return (
             <div className="player">
-               <input
-                placeholder="Search"
-                type="text"
-                className="search-field"
-                onChange={this.handleSearch}
-              />
+                <input
+                    placeholder="Search"
+                    type="text"
+                    className="search-field"
+                    onChange={this.handleSearch}
+                />
                 <svg className="player__wave" viewBox="0 0 1354 128.8">
                     <path
                         fill="none"

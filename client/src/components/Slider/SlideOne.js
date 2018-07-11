@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
+import slide1 from '../../img/slide1.jpg';
 const SlideOne = (props) => {
 
     let background = {
-        backgroundImage: 'url(https://ua-1.cdn-fullscreendirect.com/7549/2016_0924_7549_4693.jpeg)',
+        backgroundImage: `url(${slide1})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     }

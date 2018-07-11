@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './slider.css'
+import '../css/slider.css'
 import SlideOne from './SlideOne';
 import SlideTwo from './SlideTwo';
 import SlideThree from './SlideThree';
@@ -10,15 +10,14 @@ export default class Slider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      slideCount: 3
+      slideCount: Math.floor(Math.random() * (4 - 1) + 1)
     }
     this.previousSlide = this.previousSlide.bind(this);
     this.nextSlide = this.nextSlide.bind(this);
-
   }
 
   render() {
-
+  console.log(this.state)
     return (
       <div className="slider">
         {/* Slides go here */}

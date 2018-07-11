@@ -13,7 +13,6 @@ let imgUrls = [
     'https://up-1.cdn-fullscreendirect.com/photos/7549/large/20170520_051211_7549_991914.jpeg',
     'https://up-1.cdn-fullscreendirect.com/photos/7549/large/20170520_051211_7549_991913.jpeg',
     'https://up-1.cdn-fullscreendirect.com/photos/7549/large/20170520_051214_7549_991925.jpeg',
-
     'https://up-1.cdn-fullscreendirect.com/photos/7549/large/20170520_051212_7549_991916.jpeg',
     'https://up-1.cdn-fullscreendirect.com/photos/7549/large/20170520_051206_7549_991894.jpeg',
     'https://up-1.cdn-fullscreendirect.com/photos/7549/large/20170520_051212_7549_991919.jpeg',

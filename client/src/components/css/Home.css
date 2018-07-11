@@ -1,0 +1,140 @@
+/*Styles for home page*/
+ .home-style{
+    background-color: #eeeeee;
+    font-family: "futura-pt-condensed",Futura,sans-serif;
+    color: rgb(92, 92, 92);
+ }
+.posts{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.posts .posts-news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 70px;
+}
+.posts .posts-news img{
+   height: 30px;
+   margin-right: 5px;
+}
+
+.posts .post{   
+    width: 70%;
+    background-color: white;
+    border-radius: 6px;
+    margin:10px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 10px;
+}
+.posts .post-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.posts .post-footer a{
+    background: none;
+    text-decoration: none;
+    color: black;
+    line-height: 1;
+}
+.load-more{
+    width: 30%;
+    height: 50px;
+    border: 1px solid black;
+    background: transparent;
+    margin: 20px auto;
+    transition: all 0.2s ease;
+    font-size: 1.1em;
+    letter-spacing: .04em;
+    border-radius: 6px;
+    font-family: "futura-pt-condensed",Futura,sans-serif;
+    text-transform: uppercase;
+}
+.load-more:hover{
+    background: black;
+    color: white;
+}
+/********************************/
+
+
+/*Styles for post page*/
+.posts-page{
+    font-family: "futura-pt-condensed",Futura,sans-serif;
+    color: rgb(92, 92, 92);
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+.post-page{
+    width: 70%;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+   
+}
+.post-page .post-img{
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 70%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.post-page p{
+    margin: 0 auto;
+    font-size: 1.2em;
+    max-width: 75%;
+    margin-bottom: 20px;
+}
+/********************************/
+
+
+/*Styles for band page*/
+.band{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.band_member{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 500px;
+    height: 150px;
+    margin: 20px;
+
+}
+.band_member:hover{
+    border: 1px solid red;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+.band_member img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    margin-right: 20px;
+}
+.member-info{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 200px;
+}  
+
+@media screen and (max-width: 600px) {
+    .posts .post{   
+        width: 90%;
+    }
+  }
