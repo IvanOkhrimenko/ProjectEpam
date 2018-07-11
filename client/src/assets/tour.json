@@ -1,5 +1,5 @@
-{
-    "1": {
+[
+     {
         "id": 1,
         "city": "madison",
         "state": "wisconsin",
@@ -9,7 +9,7 @@
         "date": "SEP 02 2018",
         "place": "kohl center"
     },
-    "2": {
+    {
         "id": 2,
         "city": "minneapolis",
         "state": "minnesota",
@@ -19,7 +19,7 @@
         "date": "SEP 04 2018",
         "place": "target center"
     },
-    "3": {
+    {
         "id": 3,
         "city": "LINCOLN",
         "state": "nebraska",
@@ -29,7 +29,7 @@
         "date": "SEP 06 2018",
         "place": "PINNACLE BANK ARENA"
     },
-    "4": {
+    {
         "id": 4,
         "city": "GRAND FORKS",
         "state": "wisconsin",
@@ -39,7 +39,7 @@
         "date": "SEP 08 2018",
         "place": "ALERUS CENTER"
     },
-    "5": {
+   {
         "id": 5,
         "city": "SIOUX FALLS",
         "state": "South Dakota",
@@ -49,7 +49,7 @@
         "date": "SEP 11 2018",
         "place": "SANFORD PREMIER CENTER"
     },
-    "6": {
+    {
         "id": 6,
         "city": "WINNIPEG",
         "state": "Manitoba",
@@ -59,7 +59,7 @@
         "date": "SEP 13 2018",
         "place": "Bell MTS Place"
     },
-    "7": {
+    {
         "id": 7,
         "city": "SASKATOON",
         "state": "Saskatchewan",
@@ -69,4 +69,4 @@
         "date": "SEP 02 2018",
         "place": "SASKTEL CENTRE"
     }
-}
+]

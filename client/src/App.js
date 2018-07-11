@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Home from './components/pages/Home';
 import Tour from './components/pages/Tour';
 import Footer from './components/Footer';
+import Music from './components/pages/Music'
 import { Route, Switch } from 'react-router-dom';
 
 class App extends Component {
@@ -20,10 +21,11 @@ class App extends Component {
 					<Route path="/posts/:id" component={Post} />
 					<Route path='/tour' component={Tour} />
 					<Route path="/band/:id" component={Band_member} />
-					{/* <Route path='/music' component={Music} />
-						<Route path='/videos' component={Videos} />
+					<Route path='/band' component={Band} /> 
+					<Route path='/music' component={Music} />
+						{/* <Route path='/videos' component={Videos} />
 						<Route path='/actors/:hero' component={Actor} /> */}
-					<Route path='/band' component={Band} /> */}
+				
 						{/* <Route path='*' component={NotFound}/>  */}
 				</Switch>
 				<Footer />

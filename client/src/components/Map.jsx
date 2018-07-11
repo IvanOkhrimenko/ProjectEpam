@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { compose, withProps, withHandlers } from "recompose";
-import { Link } from 'react-router-dom';
+
 import {
     withScriptjs,
     withGoogleMap,
@@ -15,7 +15,7 @@ const MapWithAMarkerClusterer = compose(
         googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDjHo8xThOAcIZhNP-6COLfJ2rEXXqvIvY&v=3.exp&libraries=geometry,drawing,places",
         loadingElement: <div style={{ height: `50%` }} />,
         containerElement: <div style={{ height: `40em` }} />,
-        mapElement: <div style={{ height: `100%`}} />
+        mapElement: <div style={{ height: `100%` }} />
     }),
     withHandlers({
         onMarkerClustererClick: () => (markerClusterer) => {
@@ -76,27 +76,12 @@ const MapWithAMarkerClusterer = compose(
 );
 
 class Map extends Component {
-    constructor() {
-        super();
-        this.state = {
-            markers: [],
-        };
-    }
-    componentDidMount() {
-        fetch('/tour')
-            .then(res => res.json())
-            .then(markers => this.setState({ markers }, () => console.log('Customers fetched...', markers)));
 
-    }
     render() {
-        console.log(this.state.markers)
+        console.log(this.props.filteredToursForMap)
         return (
-
             <MapWithAMarkerClusterer
-                markers={this.state.markers}
-
-            // fbProfileId={this.props.fbProfileId}
-            // myProfileUser={this.props.myProfileUser}
+                markers={this.props.filteredToursForMap}
             />
         )
     }

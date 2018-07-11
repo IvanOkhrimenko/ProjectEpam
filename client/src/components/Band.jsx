@@ -45,10 +45,6 @@ class Band extends Component {
             </Link>
           </div>         
         )}
-        {/* <div className="gallery"> */}
-         
-        {/* </div> */}
-        
       </div>
       <h1>Gallery</h1>
       <Gallery />
