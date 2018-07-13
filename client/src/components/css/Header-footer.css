@@ -42,7 +42,37 @@
     height: 20px;}
 
 
-
+    li{
+        list-style: none;
+        float: left;
+        padding-left: 30px;
+        position: relative;
+        display: block;
+      }
+    
+      li:hover .submenu{
+        display: block;
+      }
+      .submenu ul{
+        margin:0px;
+        padding:0px;
+      }
+      .submenu ul li{
+        float:none;
+        border-bottom: 1px #030303;
+        background: #eee;
+        
+      }
+      .submenu ul li a{
+        padding: 5px 0;
+      }
+      .submenu{
+        position: absolute;
+        z-index: 2;
+        display: none;
+        border: 1px solid #eeeeee;
+        width:130px;
+      }
 
 @media screen and (max-width: 600px) {
     .navbar{

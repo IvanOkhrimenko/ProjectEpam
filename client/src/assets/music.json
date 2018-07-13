@@ -9,66 +9,61 @@
         "title": "Creeping Death",
         "subtitle": "Ride the Lightning",
         "image": "http://loudwire.com/files/2012/10/creepingdeath.jpg?w=980&q=75",
-        "audio": "https://soundcloud.com/a-jameshetfield/metallica-nothing-else-matters"
+        "audio": "https://piers.io/codepen/music-player/port-isla/audio.m4a"
     },
     {
         "title": "Enter Sandman",
         "subtitle": "Metallica",
         "image": "http://loudwire.com/files/2012/10/entersandman.jpg?w=980&q=75",
-        "audio": "/assets/music/fehu.mp3"
+        "audio": "https://piers.io/codepen/music-player/port-isla/audio.m4a"
     },
-    {
-        "title": "One",
-        "subtitle": "...And Justice for All",
-        "image": "http://loudwire.com/files/2012/10/one.jpg?w=980&q=75",
-        "audio": "/assets/music/bjarkan.mp3"
-    },
+
     {
         "title": "Seek & Destroy",
         "subtitle": "Kill 'Em All",
         "image": "http://loudwire.com/files/2012/10/killemall.jpg?w=980&q=75",
-        "audio": "/assets/music/dagr.mp3"
+        "audio": "https://piers.io/codepen/music-player/port-isla/audio.m4a"
     },
     {
         "title": "For Whom the Bell Tolls",
         "subtitle": "Ride the Lightning",
         "image": "http://loudwire.com/files/2012/10/forwhomthebelltolls.jpg?w=980&q=75",
-        "audio": "/assets/music/odal.mp3"
+        "audio": "https://piers.io/codepen/music-player/port-isla/audio.m4a"
     },
     {
         "title": "Battery",
         "subtitle": "Master of Puppets",
         "image": "http://loudwire.com/files/2012/10/masterofpuppets1.jpg?w=980&q=75",
-        "audio": "/assets/music/drivande.mp3"
+        "audio": "https://piers.io/codepen/music-player/port-isla/audio.m4a"
     },
     {
         "title": "...And Justice for All",
         "subtitle": "...And Justice for All",
         "image": "http://loudwire.com/files/2012/10/andjusticeforall.jpg?w=980&q=75",
-        "audio": "/assets/music/ehwar.mp3"
+        "audio": "https://piers.io/codepen/music-player/port-isla/audio.m4a"
     },
     {
         "title": "Fade to Black",
         "subtitle": "Ride the Lightning",
         "image": "http://loudwire.com/files/2012/10/forwhomthebelltolls1.jpg?w=980&q=75",
-        "audio": "/assets/music/hagal.mp3"
+        "audio": "https://piers.io/codepen/music-player/port-isla/audio.m4a"
     },
     {
         "title": "Welcome Home (Sanitarium)",
         "subtitle": "Master of Puppets",
         "image": "http://loudwire.com/files/2012/11/masterofpuppets1.jpg?w=980&q=75",
-        "audio": "/assets/music/heimta-thurs.mp3"
+        "audio": "https://piers.io/codepen/music-player/port-isla/audio.m4a"
     },
     {
         "title": "Nothing Else Matters",
         "subtitle": "Metallica",
         "image": "https://upload.wikimedia.org/wikipedia/en/f/f5/Metallica_-_Nothing_Else_Matters_cover.jpg",
-        "audio": "/assets/music/kauna.mp3"
+        "audio": "https://piers.io/codepen/music-player/port-isla/audio.m4a"
     },
     {
         "title": "The Unforgiven",
         "subtitle": "Metallica",
         "image": "https://upload.wikimedia.org/wikipedia/en/d/de/Metallica_-_The_Unforgiven_cover.jpg",
-        "audio": "/assets/music/loyndomsriss.mp3"
+        "audio": "https://piers.io/codepen/music-player/port-isla/audio.m4a"
     }
 ]

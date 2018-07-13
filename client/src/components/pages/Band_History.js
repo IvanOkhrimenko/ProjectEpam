@@ -5,10 +5,9 @@ const Band_History = () => {
             <div className='member-name'>
                 <h2>History</h2>
             </div>
-            <div className="member-block">
+            <div className="history-style">
 
                 <p> Ah, the joy of humble beginnings…</p>
-
 
                 <p>Metallica, one of the biggest selling acts in American history, were born on October 28, 1981 when drummer Lars Ulrich and guitar player/singer James Hetfield got together via Ulrich’s LA Recycler newspaper ad.
                      Soon, the two had recruited Hetfield’s friend and housemate Ron McGovney to play bass, Dave Mustaine to play lead guitar, and taken the name Metallica after a suggestion from Bay Area metal scene friend Ron Quintana.
@@ -110,37 +109,37 @@ const Band_History = () => {
                     In between the few live dates, the band was quietly hammering away on new music at HQ.
                 </p>
                 <p>
-                As 2016 kicked off, the boys continued working hard to finish up Album #10. In between days at the studio, they found the time to have an intimate (?!?!) little gig for 40,000+ people at San Francisco's AT&T Park on the night before the Super Bowl. 
-                They also dove into the deepest archives to unearth rare and unheard material for the beginning of a campaign to remaster and reissue the catalog. Kill 'Em All and Ride the Lightning were re-released just in time for Record Store Day which saw the band embracing their roots and not only playing a quick gig at Rasputin Music in Berkeley, CA, but throwing an after party for dozens of old friends at the original MetalliMansion in El Cerrito, CA.
-                 Record Store Day also saw the release of Liberté, Egalité, Fraternité, Metallica! on CD, a live recording of the band's performance at Le Batalcan in 2003 with proceeds from sales donated to victims of the Parisian attacks in Fall of 2015. 
-                Like clockwork, the band spent a night down at AT&T Park for the Fourth Annual Metallica Night with the San Francisco Giants partaking in all the festivities that fans have grown to expect.
+                    As 2016 kicked off, the boys continued working hard to finish up Album #10. In between days at the studio, they found the time to have an intimate (?!?!) little gig for 40,000+ people at San Francisco's AT&T Park on the night before the Super Bowl.
+                    They also dove into the deepest archives to unearth rare and unheard material for the beginning of a campaign to remaster and reissue the catalog. Kill 'Em All and Ride the Lightning were re-released just in time for Record Store Day which saw the band embracing their roots and not only playing a quick gig at Rasputin Music in Berkeley, CA, but throwing an after party for dozens of old friends at the original MetalliMansion in El Cerrito, CA.
+                     Record Store Day also saw the release of Liberté, Egalité, Fraternité, Metallica! on CD, a live recording of the band's performance at Le Batalcan in 2003 with proceeds from sales donated to victims of the Parisian attacks in Fall of 2015.
+                    Like clockwork, the band spent a night down at AT&T Park for the Fourth Annual Metallica Night with the San Francisco Giants partaking in all the festivities that fans have grown to expect.
                 </p>
                 <p>
-                Come summertime, the HQ studio was positively screaming with the authentic intent of a new album being delivered. 
-                Producer Greg Fidelman was in to help the process hit full speed and, rather than wait until 2017, the release of Hardwired…To Self-Destruct was pushed up to November 18th.
-                 Lead track “Hardwired” saw a surprise debut and became the chosen blast of molten metal aimed squarely at the public on August 18th. Two days later, the band opened the U.S. 
-                Bank Stadium in Minneapolis with a sell-out stormer where the new album artwork (photographed by Herring + Herring and designed by Turner Duckworth) was revealed.
+                    Come summertime, the HQ studio was positively screaming with the authentic intent of a new album being delivered.
+                    Producer Greg Fidelman was in to help the process hit full speed and, rather than wait until 2017, the release of Hardwired…To Self-Destruct was pushed up to November 18th.
+                     Lead track “Hardwired” saw a surprise debut and became the chosen blast of molten metal aimed squarely at the public on August 18th. Two days later, the band opened the U.S.
+                    Bank Stadium in Minneapolis with a sell-out stormer where the new album artwork (photographed by Herring + Herring and designed by Turner Duckworth) was revealed.
                 </p>
                 <p>
-                From then on time seemed to become a blur. 
-                Promotional tours taking in the US, UK, Germany, and Canada arrived in early winter, featuring several special Fifth Member fan club shows in places such as Manhattan’s Webster Hall and London’s House of Vans blistering paint.
-                 The album itself was received with enormous acclaim, both from fans and critics.
-                 It was number one in 57 countries and was the third biggest album of 2016 in the US behind only Drake and Beyoncé.
+                    From then on time seemed to become a blur.
+                    Promotional tours taking in the US, UK, Germany, and Canada arrived in early winter, featuring several special Fifth Member fan club shows in places such as Manhattan’s Webster Hall and London’s House of Vans blistering paint.
+                     The album itself was received with enormous acclaim, both from fans and critics.
+                     It was number one in 57 countries and was the third biggest album of 2016 in the US behind only Drake and Beyoncé.
                 </p>
                 <p>
-                After concluding 2016 with a hometown show at the historic Fox Theater in Oakland, the band spent much of 2017 taking the WorldWired Tour across the globe. 
-                After warming up in Asia, Denmark, and Latin America, the boys hit the U.S. and Canada for their first proper North American tour since 2009 and their first stadium tour since 2003. 
-                When all was said and done, the North American leg of the WorldWired Tour drew over a million fans and landed Metallica among the top drawing touring acts of 2017.
-                 Following the North American Tour, WorldWired continued by rolling out an all new live production inside European arenas debuting in Copenhagen in the fall.
+                    After concluding 2016 with a hometown show at the historic Fox Theater in Oakland, the band spent much of 2017 taking the WorldWired Tour across the globe.
+                    After warming up in Asia, Denmark, and Latin America, the boys hit the U.S. and Canada for their first proper North American tour since 2009 and their first stadium tour since 2003.
+                    When all was said and done, the North American leg of the WorldWired Tour drew over a million fans and landed Metallica among the top drawing touring acts of 2017.
+                     Following the North American Tour, WorldWired continued by rolling out an all new live production inside European arenas debuting in Copenhagen in the fall.
                 </p>
                 <p>
-                The year wasn’t solely dedicated to touring, though!
-                 February saw the band team up with Lady Gaga on a performance of “Moth Into Flame” that was so electric, James’ microphone was fried (that’s what happened, right?!). 
-                 The band’s remaster campaign continued as Master of Puppets was released as an outrageously comprehensive box set in November. Following the launch of All Within My Hands, the band’s charitable foundation, the year was capped off with several philanthropic initiatives including the Band Together Bay Area benefit concert which helped raise $17 million for victims of Northern Californian wildfires. 
-                The foundation also teamed up with Starbucks and Spotify to participate in their Give Good Campaign for the holidays.
+                    The year wasn’t solely dedicated to touring, though!
+                     February saw the band team up with Lady Gaga on a performance of “Moth Into Flame” that was so electric, James’ microphone was fried (that’s what happened, right?!).
+                     The band’s remaster campaign continued as Master of Puppets was released as an outrageously comprehensive box set in November. Following the launch of All Within My Hands, the band’s charitable foundation, the year was capped off with several philanthropic initiatives including the Band Together Bay Area benefit concert which helped raise $17 million for victims of Northern Californian wildfires.
+                    The foundation also teamed up with Starbucks and Spotify to participate in their Give Good Campaign for the holidays.
                 </p>
                 <p>
-                There’s no sign of slowing down in 2018 as the boys continue to take the WorldWired Tour to the masses…
+                    There’s no sign of slowing down in 2018 as the boys continue to take the WorldWired Tour to the masses…
                 </p>
             </div>
         </div>

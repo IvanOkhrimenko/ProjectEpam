@@ -3,7 +3,7 @@ import Slider from '../Slider/Slider'
 import Map from '../Map'
 import '../css/Home.css'
 import TourList from '../TourList';
-import { log } from 'util';
+import '../css/Tours.css';
 
 export default class Home extends Component {
 	constructor() {
@@ -19,7 +19,7 @@ export default class Home extends Component {
 			.then(tours => this.setState({ tours }, () => console.log('Customers fetched...', tours)));
 
 	}
-	
+
 	handleSearch = event => {
 		this.setState({
 			searchQuery: event.target.value.toLowerCase()
@@ -36,15 +36,17 @@ export default class Home extends Component {
 			}
 		);
 		return (
-			<div >
-
+			<div className='tours'>
 				<Slider />
-				<input
-					placeholder="Search"
-					type="text"
-					className="search-field"
-					onChange={this.handleSearch}
-				/>
+				<div className="member-name">
+					<h2>Tours</h2>
+					<input
+						placeholder="Search"
+						type="search"
+						className="search-field"
+						onChange={this.handleSearch}
+					/>
+				</div>
 				<TourList filteredToursForTourList={filteredTours} />
 				<Map filteredToursForMap={filteredTours} />
 			</div>

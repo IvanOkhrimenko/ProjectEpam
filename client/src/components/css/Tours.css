@@ -1,0 +1,23 @@
+.tours .member-name input {
+    position: relative;
+    left: 20%;
+   }
+   .tour-section{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    background-color: white;
+    border-radius: 6px;
+    margin:20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 10px;
+   }
+   .tour-date{
+margin: 20px;
+    width: 30px;
+   }
+   .tour-info{
+       position: relative;
+       width: 90%;
+   }

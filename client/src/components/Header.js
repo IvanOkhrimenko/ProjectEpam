@@ -11,7 +11,7 @@ const Header = () => {
                     <li><Link to="/home">Home</Link></li>
                     <li>
                         <a>Band</a>
-                        <div class="submenu">
+                        <div className="submenu">
                             <ul>
                                 <li><Link to="/band">Members</Link></li>
                                 <li><Link to="/history">History</Link></li>
