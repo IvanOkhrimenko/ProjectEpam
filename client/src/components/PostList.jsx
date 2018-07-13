@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from 'react';
 import news from '../img/newspaper-regular.svg'
 import { Link } from 'react-router-dom';
 const style = {
@@ -8,7 +8,7 @@ const style = {
   padding: 8
 };
 
-class PostList extends React.Component {
+class PostList extends Component {
   constructor() {
     super();
     this.state = {

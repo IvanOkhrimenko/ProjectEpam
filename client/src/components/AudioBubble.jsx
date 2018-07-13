@@ -12,15 +12,15 @@ class AudioBubble extends Component {
         };
     }
 
-   componentDidMount() {
-		this.$audio.addEventListener('loadedmetadata', () => {
-			this.duration = this.$audio.duration;
-		});
-		this.pathLength = getDashoffsetCircle(this.$progress);
-		this.setState({
-			strokeDashoffset: this.pathLength,
-		});
-	
+    componentDidMount() {
+        this.$audio.addEventListener('loadedmetadata', () => {
+            this.duration = this.$audio.duration;
+        });
+        this.pathLength = getDashoffsetCircle(this.$progress);
+        this.setState({
+            strokeDashoffset: this.pathLength,
+        });
+
     }
     componentWillReceiveProps(nextProps) {
         if (nextProps.active) {
@@ -42,20 +42,20 @@ class AudioBubble extends Component {
         }
     }
     updateProgressBar() {
-		try {
-			const { currentTime } = this.$audio;
-			const percentage = (currentTime / this.duration);
-			const strokeDashoffset = percentage * this.pathLength;
-			this.setState({
-				strokeDashoffset: (this.pathLength - strokeDashoffset),
-			});
-		} catch (error) {
-			// music stopped
-		}
-	}
+        try {
+            const { currentTime } = this.$audio;
+            const percentage = (currentTime / this.duration);
+            const strokeDashoffset = percentage * this.pathLength;
+            this.setState({
+                strokeDashoffset: (this.pathLength - strokeDashoffset),
+            });
+        } catch (error) {
+            // music stopped
+        }
+    }
     handleClick() {
-		this.props.setActive();
-	}
+        this.props.setActive();
+    }
     render() {
         return (
             <figure

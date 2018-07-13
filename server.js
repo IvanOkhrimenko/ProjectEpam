@@ -4,7 +4,8 @@ const cors = require('cors');
 const posts = require('./client/src/assets/posts.json');
 const tours = require('./client/src/assets/tour.json');
 const band = require('./client/src/assets/band.json');
-const music = require('./client/src/assets/music.json')
+const music = require('./client/src/assets/music.json');
+
 
 const app = express();
 app.use(bodyParser.json());
@@ -24,6 +25,7 @@ app.get('/band', (req, res) => {
 app.get('/music', (req, res) => {
   res.json(music);
 });
+
 
 const port = 5000;
 

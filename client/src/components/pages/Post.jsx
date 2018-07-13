@@ -4,7 +4,6 @@ export default class Post extends Component {
     constructor(props) {
         super(props);
         this.state = this.props.location.state ? this.props.location.state : {};
-        this.state.redirect = false;
     }
 
     render() {

@@ -1,0 +1,136 @@
+
+/*Styles for band page*/
+.band{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #eeeeee;
+}
+.band_member{
+    width: 100%;
+    font-family: "calluna-sans","Gill Sans",Calibri,"Trebuchet MS",sans-serif;
+}
+.member-name{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 40px;
+}
+.member-block{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 40%;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 6px;
+
+}
+.member-block img{
+    width: 40%;
+    height: 400px;
+    margin: 20px;
+    border-radius: 6px;
+}
+.member-sector{
+   display: flex;
+   justify-content: space-around;
+}
+.member-info{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: -40px;
+}
+.member-info span{
+    font-weight: 600;
+}
+.story-name{
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    font-size: 1.5em;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    
+}
+.story{
+    padding: 16px;
+    font-size: 20px;
+    color: #222;
+    margin: 15px 0;
+    text-align: left;
+}
+/* .band_member{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 40%;
+    height: 200px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.band_member:hover{
+    border: 1px solid red;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+.band_member img{
+    width: 30%;
+    height: 90%;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+.member-info{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 200px;
+    
+}   */
+
+  li{
+    list-style: none;
+    float: left;
+    padding-left: 30px;
+    position: relative;
+    display: block;
+  }
+
+  li:hover .submenu{
+    display: block;
+  }
+  .submenu ul{
+    margin:0px;
+    padding:0px;
+  }
+  .submenu ul li{
+    float:none;
+    border-bottom: 1px #030303;
+    background: #eee;
+    
+  }
+  .submenu ul li a{
+    padding: 5px 0;
+  }
+  .submenu{
+    position: absolute;
+    z-index: 2;
+    display: none;
+    border: 1px solid #eeeeee;
+    width:130px;
+   
+  }

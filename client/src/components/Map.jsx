@@ -53,12 +53,7 @@ const MapWithAMarkerClusterer = compose(
                             options={{ disableAutoPan: true }}
                             key={`${marker.id}_info`}
                         ><div>
-                                {/* <Link to={{
-                                    pathname: `/profile/${marker.id}/`,
-                                    state: { user: marker, myProfileUser: props.myProfileUser }
-                                }}>
-                                    <img src={marker.image.data ? marker.image.data.url : marker.image} style={imageStyles} alt='face' />
-                                </Link> */}
+
                                 <h3>{marker.place.toUpperCase()}</h3>
                                 <div>{marker.country.toUpperCase()}</div>
                                 <div>{marker.state}</div>
