@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { compose, withProps, withHandlers } from "recompose";
+import { compose, withProps } from "recompose";
 
 import {
     withScriptjs,
@@ -16,11 +16,6 @@ const MapWithAMarkerClusterer = compose(
         loadingElement: <div style={{ height: `50%` }} />,
         containerElement: <div style={{ height: `40em` }} />,
         mapElement: <div style={{ height: `100%` }} />
-    }),
-    withHandlers({
-        onMarkerClustererClick: () => (markerClusterer) => {
-            const clickedMarkers = markerClusterer.getMarkers()
-        },
     }),
     withScriptjs,
     withGoogleMap
@@ -44,8 +39,8 @@ const MapWithAMarkerClusterer = compose(
                     <Marker
                         key={marker.id}
                         position={{
-                            lat: parseInt(marker.lat),
-                            lng: parseInt(marker.lng)
+                            lat: parseInt(marker.lat,10),
+                            lng: parseInt(marker.lng,10)
                         }}>
 
 

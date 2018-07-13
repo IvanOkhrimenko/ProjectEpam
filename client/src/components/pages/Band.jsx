@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Router } from 'react-router-dom';
 import '../css/Band.css';
-import Gallery from '../Gallery'
 
 class Band extends Component {
   constructor() {
@@ -40,7 +38,7 @@ class Band extends Component {
                   <p><span>INSTRUMENT :</span>{member.instrument}</p>
                   <p><span>VITALS :</span>{member.vitals}</p>
                   <p><span>TIME IN BAND :</span>{member.time}</p>
-                  {(member.died != undefined) ? <p><span>DIED :</span>{member.died}</p> : console.log('nothing')}
+                  {(member.died !== undefined) ? <p><span>DIED :</span>{member.died}</p> : console.log('nothing')}
 
                 </div>
               </div>
@@ -51,9 +49,6 @@ class Band extends Component {
             </div>
           </div>
         )}
-
-        <h1>Gallery</h1>
-        <Gallery />
       </div>
 
     );

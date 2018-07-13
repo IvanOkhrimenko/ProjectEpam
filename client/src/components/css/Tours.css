@@ -1,8 +1,11 @@
 .tours .member-name input {
     position: relative;
     left: 20%;
+    
    }
    .tour-section{
+    font-family: "futura-pt-condensed",Futura,sans-serif;
+    color: rgb(92, 92, 92);
     display: flex;
     justify-content: space-between;
     width: 70%;

@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Post from './components/pages/Post'
-
 import './App.css';
 import Band from './components/pages/Band';
 import Header from './components/Header'
@@ -10,6 +9,7 @@ import Footer from './components/Footer';
 import Music from './components/pages/Music';
 import Band_History from './components/pages/Band_History';
 import { Route, Switch } from 'react-router-dom';
+import Gallery from './components/pages/Gallery';
 
 
 const App = () => {
@@ -25,10 +25,10 @@ const App = () => {
 				<Route path="/history" component={Band_History} />
 				<Route path='/band' component={Band} />
 				<Route path='/music' component={Music} />
-				{/* <Route path='/videos' component={Videos} />
-						<Route path='/actors/:hero' component={Actor} /> */}
+				 <Route path='/gallery' component={Gallery} />
+						
 
-				{/* <Route path='*' component={NotFound}/>  */}
+				
 			</Switch>
 			<Footer />
 		</div >

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../components/css/Header-footer.css';
 
-import { Link, Router } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -19,6 +19,7 @@ const Header = () => {
                         </div>
                     </li>
                     <li><Link to="/music">Music</Link></li>
+                    <li><Link to="/gallery">Gallery</Link></li>
                     <li><Link to="/tour">Tour</Link></li>
                 </ul>
             </div>

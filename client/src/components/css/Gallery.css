@@ -1,14 +1,12 @@
 .gallery-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 75%;
-    margin: 0 auto;
-  
+    background-color: #eee;
+    font-family: "futura-pt-condensed",Futura,sans-serif;
+    color: rgb(92, 92, 92);
 }
 .gallery-card {
-    position: relative;
-    overflow: hidden;
+  display: inline-block;
+  background-color: white;
+  position: relative;
 
   }
 .gallery-thumbnail{
@@ -23,7 +21,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 2rem;
+  font-size: 4rem;
   color: #fff;
   cursor: pointer;
   opacity: 0;
@@ -32,7 +30,7 @@
 }
 .card-icon-open:focus,
 .card-icon-open:hover {
-    color: #111;
+    color: rgb(75, 72, 72);
   
 }
 
@@ -68,10 +66,10 @@
 
 .modal-close {
   position: absolute;
-  border: 1px solid red;
+
   top: 0;
   right: 8px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color:  #111;
   transition: all .25s ease-in-out;
 }

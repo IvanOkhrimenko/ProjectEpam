@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import slide3 from '../../img/slide3.jpeg';
 const SlideThree= (props) => {
 

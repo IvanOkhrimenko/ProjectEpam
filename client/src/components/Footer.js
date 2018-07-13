@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../components/css/Header-footer.css';
 import logo from '../Metallica_wordmark.svg';
 const Footer = () => {

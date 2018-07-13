@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import news from '../img/newspaper-regular.svg'
 import { Link } from 'react-router-dom';
-const style = {
-  height: 30,
-  border: "1px solid green",
-  margin: 6,
-  padding: 8
-};
+
 
 class PostList extends Component {
   constructor() {

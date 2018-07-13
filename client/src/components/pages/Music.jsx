@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./Music.css";
+import "../css/Music.css";
 import Slider from '../Slider/Slider'
 import AudioBubble from "../AudioBubble";
 
