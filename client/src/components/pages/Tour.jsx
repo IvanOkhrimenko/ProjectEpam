@@ -29,6 +29,8 @@ export default class Home extends Component {
 		if (this.state.tours.length === 0) {
 			return <div>...loading</div>;
 		}
+	
+
 		//search by state
 		const filteredTours = this.state.tours.filter(
 			tour => {
