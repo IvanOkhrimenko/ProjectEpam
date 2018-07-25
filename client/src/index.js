@@ -17,7 +17,6 @@ console.log(store);
 render(
     <Provider store={store}>
         {Routes}
-          
     </Provider>,
     main,
 );

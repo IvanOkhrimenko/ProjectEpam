@@ -1,29 +1,33 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { PropTypes } from 'prop-types';
+import { bandFetchData, bandSetFilter } from '../../actions/band';
 import '../css/Band.css';
 
 class Band extends Component {
-  constructor() {
-    super();
-    this.state = {
-      members: []
-    };
-  }
-
   componentDidMount() {
-    fetch('/band')
-      .then(res => res.json())
-      .then(members => this.setState({ members }, () => console.log('Customers fetched...', members)));
-
+    if (this.props.band.length === 0) {
+      this.props.fetchData('/band');
+    }
   }
 
   render() {
-    console.log(this.state.members)
-    if (this.state.members.length === 0) {
-      return <div>...loading</div>;
-    }
+    const { band } = this.props;
+    console.log(this.props);
     return (
       <div className='band'>
-        {Object.values(this.state.members).map(member =>
+        {
+          this.props.hasErrored ?
+            <p>Sorry! There was an error loading the actors</p>
+            : null}
+        {
+          this.props.isLoading ?
+            <div className="sk-folding-cube">
+              loading...
+            </div>
+            : null
+        }
+        {Object.values(band).map(member =>
           <div className='band_member' key={member.id} >
             <div className='member-name'>
               <h2>{member.first_name} {member.last_name}</h2>
@@ -38,7 +42,7 @@ class Band extends Component {
                   <p><span>INSTRUMENT :</span>{member.instrument}</p>
                   <p><span>VITALS :</span>{member.vitals}</p>
                   <p><span>TIME IN BAND :</span>{member.time}</p>
-                  {(member.died !== undefined) ? <p><span>DIED :</span>{member.died}</p> : console.log('nothing')}
+                  {(member.died !== undefined) ? <p><span>DIED :</span>{member.died}</p> : null}
 
                 </div>
               </div>
@@ -54,5 +58,22 @@ class Band extends Component {
     );
   }
 }
-
-export default Band;
+Band.propTypes = {
+  fetchData: PropTypes.func,
+  hasErrored: PropTypes.bool,
+  isLoading: PropTypes.bool,
+  actors: PropTypes.any,
+  setFilter: PropTypes.func,
+  visibilityFilter: PropTypes.string,
+}
+const mapStateToProps = state => ({
+  band: state.bandState.band,
+  hasErrored: state.bandState.hasErrored,
+  isLoading: state.bandState.isLoading,
+  visibilityFilter: state.bandState.visibilityFilter,
+});
+const mapDispatchToProps = dispatch => ({
+  fetchData: url => dispatch(bandFetchData(url)),
+  setFilter: filter => dispatch(bandSetFilter(filter)),
+})
+export default connect(mapStateToProps, mapDispatchToProps)(Band);

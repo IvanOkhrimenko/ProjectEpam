@@ -123,7 +123,7 @@ class PostList extends Component {
   }
 }
 
-PostList.propTypes = {
+PostList.PropTypes = {
   fetchData: PropTypes.func,
   loadMore: PropTypes.func,
   resetLimit: PropTypes.func,

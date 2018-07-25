@@ -5,6 +5,7 @@ const posts = require('./client/src/assets/posts.json');
 const tours = require('./client/src/assets/tour.json');
 const band = require('./client/src/assets/band.json');
 const music = require('./client/src/assets/music.json');
+const history = require('./client/src/assets/history.json')
 
 
 const app = express();
@@ -24,6 +25,9 @@ app.get('/band', (req, res) => {
 });
 app.get('/music', (req, res) => {
   res.json(music);
+});
+app.get('/history', (req, res) => {
+  res.json(history);
 });
 
 
