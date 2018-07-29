@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { PropTypes } from 'prop-types';
+import { musicFetchData, musicSetActiveIndex, musicSearch } from '../../actions/music';
 import "../css/Music.css";
 import Slider from '../Slider/Slider'
 import AudioBubble from "../AudioBubble";
@@ -6,48 +9,25 @@ import AudioBubble from "../AudioBubble";
 
 
 class Music extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            activeIndex: null,
-            songs: [],
-            searchQuery: ""
-        };
+    componentDidMount() {
+        if (this.props.songs.length === 0) {
+            this.props.fetchData('/music');
+        }
     }
-
+    componentWillUnmount() {
+        this.props.setIndex(null);
+    }
     onComplete() {
-        this.setState({
-            activeIndex: null
-        });
+        this.props.setIndex(null)
     }
     setActive(i) {
         const index = i === this.state.activeIndex ? null : i;
-        this.setState({
-            activeIndex: index
-        });
+        this.props.setIndex(index)
     }
-    handleSearch = event => {
-        this.setState({
-            searchQuery: event.target.value.toLowerCase()
-        });
-    };
-    componentDidMount() {
-        fetch('/music')
-            .then(res => res.json())
-            .then(songs => this.setState({ songs }, () => console.log('Customers fetched...', songs)));
 
-    }
+
     render() {
-        console.log(this.state)
-        if (this.state.songs.length === 0) {
-            return <div>...loading</div>;
-        }
-
-        const filteredSongs = this.state.songs.filter(
-            song => {
-                return song.title.toLowerCase().indexOf(this.state.searchQuery) !== -1;
-            }
-        );
+        const { songs, activeIndex, searchSongs } = this.props;
 
         return (
             <div>
@@ -60,31 +40,69 @@ class Music extends Component {
                             placeholder="Search"
                             type="search"
                             className="search-field"
-                            onChange={this.handleSearch}
+                            ref={(input) => { this.searchInput = input; }}
+                            onChange={() => {
+                                searchSongs(this.searchInput.value);
+
+                            }}
                         />
 
                     </div>
+                    {
+                        this.props.hasErrored ?
+                            <p>Sorry! There was an error loading the posts</p>
+                            : null}
+                    {
+                        this.props.isLoading ?
+                            <div className="sk-folding-cube">
+                                <div className="sk-cube1 sk-cube"></div>
+                                <div className="sk-cube2 sk-cube"></div>
+                                <div className="sk-cube4 sk-cube"></div>
+                                <div className="sk-cube3 sk-cube"></div>
+                            </div>
+                            : null
+                    }
                     <div className="player__items">
-                        {Object.values(filteredSongs).map((audio, i) =>
+                        {songs.map((audio) =>
                             <AudioBubble
-                                active={this.state.activeIndex === i}
+                                active={activeIndex === audio.id}
                                 key={audio.title}
                                 title={audio.title}
                                 subtitle={audio.subtitle}
                                 image={audio.image}
                                 audio={audio.audio}
-                                setActive={this.setActive.bind(this, i)}
+                                setActive={this.setActive.bind(this, audio.id)}
                                 onComplete={this.onComplete.bind(this)}
-                            />
-                        )}
+                            />)}
                     </div>
                 </div>
             </div>
         );
     }
 }
+Music.propTypes = {
+    fetchData: PropTypes.func,
+    hasErrored: PropTypes.bool,
+    isLoading: PropTypes.bool,
+    songs: PropTypes.any,
+    searchSongs: PropTypes.func,
 
-export default Music;
+}
+const mapStateToProps = state => ({
+    songs: Object.values(state.musicState.songs)
+        .filter(song => song.title.toLowerCase().includes(state.musicState.searchFilter.toLowerCase())),
+    hasErrored: state.musicState.hasErrored,
+    isLoading: state.musicState.isLoading,
+    activeIndex: state.musicState.activeIndex,
+
+});
+const mapDispatchToProps = dispatch => ({
+    fetchData: url => dispatch(musicFetchData(url)),
+    setIndex: index => dispatch(musicSetActiveIndex(index)),
+    searchSongs: searchFilter => dispatch(musicSearch(searchFilter)),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Music);
 
 
 
